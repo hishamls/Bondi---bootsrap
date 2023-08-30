@@ -1,0 +1,225 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --white-color: #ffff;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-btn,
+.main-btn:hover {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+/* START NAVBAR */
+nav {
+  background-color: var(--dark-color);
+}
+.nav-link {
+  color: var(--white-color);
+}
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--green-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+.navbar .search svg {
+  color: var(--green-color);
+}
+.navbar-toggler {
+  color: var(--white-color);
+  border-color: var(--white-color);
+  font-size: 25px;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"] {
+  color: var(--green-color);
+}
+
+/* END NAVBAR */
+
+/* START LANDING */
+.landing {
+  /* YOU MUST KEEP SPACE IN CALC() */
+  min-height: calc(100vh - 0.3vh);
+  background-color: var(--dark-color);
+}
+/* END LANDING */
+
+/* START FEATURES */
+.icon-holder {
+  height: 200px;
+}
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-title::after {
+  content: "";
+  background-color: var(--green-color);
+  width: 120px;
+  height: 2px;
+  /*
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+  */
+
+  /* we can do that with flex for parent */
+}
+
+.icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.icon-holder .icon {
+  color: var(--green-color);
+}
+.feat h4 {
+  color: var(--yellow-color);
+}
+/* END FEATURES */
+
+/* START PRODUCTS  */
+#our-work {
+  background-color: var(--section-color);
+}
+#our-work ul .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+#our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+#our-work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+.box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: #33d1cca8;
+  /* opacity: 50%; IT INCLUDES THE CONTENT WORD*/
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+
+  transition: 0.3s;
+  transform: translateX(calc(-100% - 5px));
+}
+.box:hover::before {
+  transform: translateX(0);
+}
+/* END PRODUCTS  */
+
+/* START STUFF */
+#stuff .description {
+  max-width: 500px;
+  margin: auto;
+}
+.big-btn {
+  padding: 0.5rem 5rem;
+}
+.big-btn:hover {
+  padding: 0.5rem 5rem;
+}
+/* END STUFF */
+
+/* START TEAM  */
+#team {
+  background-color: var(--section-color);
+}
+.img-box h4 {
+  background-color: var(--green-color);
+}
+/* END TEAM  */
+
+/* START START */
+#start {
+  background-color: var(--dark-color);
+}
+
+/* END START */
+
+/* START SUBSCRIBE */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.e-mail {
+  border: none;
+  border-bottom: 1px solid white;
+}
+.e-mail:focus {
+  outline: none;
+}
+.e-mail::placeholder {
+  color: white;
+}
+#submit {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+/* END SUBSCRIBE */
+
+/* START FOOTER  */
+footer {
+  background-color: var(--dark-color);
+}
+.copyright > em {
+  color: var(--green-color);
+}
+div em {
+  color: var(--yellow-color);
+}
+.social svg {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.twitter {
+  background-color: #1da1f2;
+}
+.instagram {
+  background-color: #405de6;
+}
+.facebook {
+  /* difference between color and background  */
+  color: #1877f2;
+}
+.social > li:nth-child(4) :nth-child(1) {
+  /* so hard and bad way for selector  */
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+.linkedin {
+  background-color: #1877f2;
+}
+
+/* END FOOTER  */

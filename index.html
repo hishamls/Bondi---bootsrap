@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hisham Sakr</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/hisham.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="imgs/logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars fa-bounce"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">About</a>
+            </li>
+          </ul>
+          <div class="search d-none d-lg-block">
+            <i class="fa-solid fa-magnifying-glass fa-beat ps-3 pe-3"></i>
+          </div>
+          <a class="btn rounded-pill main-btn" href="#">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION LANDING -->
+    <section class="landing d-flex justify-content-center align-items-center">
+      <div class="text-center text-light">
+        <h1>Test the creativity</h1>
+        <p class="fs-6 text-white-50 mb-5">
+          sit amet consectetur adipisicing elit.
+        </p>
+        <a class="btn rounded-pill main-btn" href="#">Get started</a>
+      </div>
+    </section>
+
+    <!-- SECTION FEATURES -->
+    <section class="features container text-center pt-5 pb-5">
+      <div class="main-title mt-5 mb-5 position-relative">
+        <img class="mb-4" src="imgs/title.png" alt="title" />
+        <h2>I'm skilling in</h2>
+        <p class="text-black-50 text-uppercase">
+          sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="row mt-5 mb-5">
+        <div class="feat col-md-6 col-lg-4">
+          <div class="icon-holder position-relative">
+            <i class="fa-solid fa-1 position-absolute bottom-0 number"></i>
+            <i
+              class="fa-solid fa-pencil fa-4x position-absolute bottom-0 icon"
+            ></i>
+          </div>
+          <h4 class="mt-3 mb-3">Graphic design</h4>
+          <p class="text-black-50 lh-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            sequi amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="feat col-md-6 col-lg-4">
+          <div class="icon-holder position-relative">
+            <i class="fa-solid fa-2 position-absolute bottom-0 number"></i>
+            <i class="fa-solid fa-tv fa-4x position-absolute bottom-0 icon"></i>
+          </div>
+          <h4 class="mt-3 mb-3">Graphic design</h4>
+          <p class="text-black-50 lh-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            sequi amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="feat col-md-6 col-lg-4">
+          <div class="icon-holder position-relative">
+            <i class="fa-solid fa-3 position-absolute bottom-0 number"></i>
+            <i
+              class="fa-solid fa-plug fa-4x position-absolute bottom-0 icon"
+            ></i>
+          </div>
+          <h4 class="mt-3 mb-3">Graphic design</h4>
+          <p class="text-black-50 lh-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            sequi amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PRODUCTS  -->
+    <section id="our-work" class="container text-center pt-5 pb-5">
+      <div class="main-title mt-5 mb-5 position-relative">
+        <img class="mb-4" src="imgs/title.png" alt="title" />
+        <h2>My works</h2>
+        <p class="text-black-50 text-uppercase">
+          sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <ul
+        class="switcher list-unstyled d-flex justify-content-center mt-5 mb-5"
+      >
+        <li class="active rounded-pill">HTML & CSS</li>
+        <li>JS</li>
+        <li>Bootstrap</li>
+        <li>React</li>
+      </ul>
+      <div class="row">
+        <div
+          class="box mb-3 bg-white col-lg-3 col-md-4 col-sm-6"
+          data-work="HTML-CSS"
+        >
+          <img class="img-fluid" src="./imgs/work-01.jpg" alt="" />
+        </div>
+        <div
+          class="box mb-3 bg-white col-lg-3 col-md-4 col-sm-6"
+          data-work="JS"
+        >
+          <img class="img-fluid" src="./imgs/work-02.jpg" alt="" />
+        </div>
+        <div
+          class="box mb-3 bg-white col-lg-3 col-md-4 col-sm-6"
+          data-work="Bootstrap"
+        >
+          <img class="img-fluid" src="./imgs/work-03.jpg" alt="" />
+        </div>
+        <div
+          class="box mb-3 bg-white col-lg-3 col-md-4 col-sm-6"
+          data-work="React"
+        >
+          <img class="img-fluid" src="./imgs/work-04.jpg" alt="" />
+        </div>
+        <div
+          class="box mb-3 bg-white col-lg-3 col-md-4 col-sm-6"
+          data-work="HTML-CSS"
+        >
+          <img class="img-fluid" src="./imgs/work-01.jpg" alt="" />
+        </div>
+        <div
+          class="box mb-3 bg-white col-lg-3 col-md-4 col-sm-6"
+          data-work="JS"
+        >
+          <img class="img-fluid" src="./imgs/work-02.jpg" alt="" />
+        </div>
+        <div
+          class="box mb-3 bg-white col-lg-3 col-md-4 col-sm-6"
+          data-work="Bootstrap"
+        >
+          <img class="img-fluid" src="./imgs/work-03.jpg" alt="" />
+        </div>
+        <div
+          class="box mb-3 bg-white col-lg-3 col-md-4 col-sm-6"
+          data-work="React"
+        >
+          <img class="img-fluid" src="./imgs/work-04.jpg" alt="" />
+        </div>
+        <div
+          class="box mb-3 bg-white col-lg-3 col-md-4 col-sm-6"
+          data-work="HTML-CSS"
+        >
+          <img class="img-fluid" src="./imgs/work-01.jpg" alt="" />
+        </div>
+        <div
+          class="box mb-3 bg-white col-lg-3 col-md-4 col-sm-6"
+          data-work="JS"
+        >
+          <img class="img-fluid" src="./imgs/work-02.jpg" alt="" />
+        </div>
+        <div
+          class="box mb-3 bg-white col-lg-3 col-md-4 col-sm-6"
+          data-work="Bootstrap"
+        >
+          <img class="img-fluid" src="./imgs/work-03.jpg" alt="" />
+        </div>
+        <div
+          class="box mb-3 bg-white col-lg-3 col-md-4 col-sm-6"
+          data-work="React"
+        >
+          <img class="img-fluid" src="./imgs/work-04.jpg" alt="" />
+        </div>
+      </div>
+      <a class="mt-5 btn rounded-pill main-btn" href="#">More&RightArrow;</a>
+    </section>
+
+    <!-- SECTION STUFF  -->
+    <section id="stuff" class="container text-center pt-5">
+      <div class="main-title mt-5 mb-4 position-relative">
+        <img class="mb-4" src="imgs/title.png" alt="title" />
+        <h2>About me</h2>
+        <p class="text-black-50 text-uppercase">
+          sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <p class="description mb-5 text-black-50">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nihil
+        molestiae deserunt ut ipsa corrupti enim animi. Ipsum, autem voluptate
+        quam et repellat laboriosam! Ullam sequi tenetur ea neque sed.
+      </p>
+      <div class="row mt-5">
+        <div class="text col-lg-4 mb-5 text-md-start">
+          <h4>First Project</h4>
+          <p class="text-black-50 fs-6">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            eum delectus nam voluptatibus.
+          </p>
+          <p class="text-black-50 fs-6">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            eum delectus nam voluptatibus.
+          </p>
+          <div class="text-center">
+            <a class="big-btn mt-5 btn rounded-pill main-btn" href="#"
+              >Order one</a
+            >
+          </div>
+        </div>
+        <div class="imge col-lg-8">
+          <img class="img-fluid" src="./imgs/laptop.png" alt="laptop" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION TEAM  -->
+    <section id="team" class="container text-center pt-5 pb-5">
+      <h2 class="fw-bold">Meet me!</h2>
+      <p class="text-black-50 mb-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+        suscipit, delectus aliquam ex unde quam accusamus quis possimus nobis
+        dolor, corrupti deleniti, illo inventore rem veniam ullam aperiam velit
+        commodi.
+      </p>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="img-box p-4 bg-white">
+            <img class="img-fluid" src="./imgs/team-1.png" alt="" />
+            <h4 class="p-4 text-light">Mauqus Salem</h4>
+            <blockquote class="text-black-50 p-1">
+              illo inventore rem veniam ullam aperiam velit commodi.
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="img-box p-4 bg-white">
+            <img class="img-fluid" src="./imgs/team-2.png" alt="" />
+            <h4 class="p-4 text-light">Ehab Elgaan</h4>
+            <blockquote class="text-black-50 p-1">
+              illo inventore rem veniam ullam aperiam velit commodi.
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="img-box p-4 bg-white">
+            <img class="img-fluid" src="./imgs/team-3.png" alt="" />
+            <h4 class="p-4 text-light">Sayd Metas</h4>
+            <blockquote class="text-black-50 p-1">
+              "illo inventore rem veniam ullam aperiam velit commodi"
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="img-box p-4 bg-white">
+            <img class="img-fluid" src="./imgs/team-4.png" alt="" />
+            <h4 class="p-4 text-light">Farid Farkha</h4>
+            <blockquote class="text-black-50 p-1">
+              illo inventore rem veniam ullam aperiam velit commodi.
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION TECHS -->
+    <section class="techs container pt-5 pb-5 text-center">
+      <div class="row align-items-center">
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+          <img class="img-fluid" src="./imgs/tech-1.png" alt="" />
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+          <img class="img-fluid" src="./imgs/tech-2.png" alt="" />
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+          <img class="img-fluid" src="./imgs/tech-3.png" alt="" />
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+          <img class="img-fluid" src="./imgs/tech-4.png" alt="" />
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+          <img class="img-fluid" src="./imgs/tech-2.png" alt="" />
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+          <img class="img-fluid" src="./imgs/tech-3.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION START  -->
+    <section id="start" class="container pt-5 pb-5 text-center text-light">
+      <h2>Hire me now!</h2>
+      <p class="text-white-50">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla facilis
+        possimus, error ad consectetur nesciun
+      </p>
+      <a class="mt-5 btn rounded-pill main-btn" href="#">Hire me</a>
+    </section>
+
+    <!-- SECTION BLOG  -->
+    <section id="blog" class="container pt-5 pb-5">
+      <div class="main-title mt-5 mb-5 position-relative">
+        <img class="mb-4" src="imgs/title.png" alt="title" />
+        <h2>Read my blog</h2>
+        <p class="text-black-50 text-uppercase">
+          sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="./imgs/blog-1.jpg" class="card-img-top" alt="" />
+            <div class="card-body">
+              <span class="text-black-50">Feb 17, 1983</span>
+              <h5 class="card-title">Card Title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem accusamus ad praesentium tenetur pariatur velit, dolorum
+                nisi, ipsa volup
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="./imgs/blog-2.jpg" class="card-img-top" alt="" />
+            <div class="card-body">
+              <span class="text-black-50">Feb 17, 1983</span>
+              <h5 class="card-title">Card Title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem accusamus ad praesentium tenetur pariatur velit, dolorum
+                nisi, ipsa volup
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="./imgs/blog-3.jpg" class="card-img-top" alt="" />
+            <div class="card-body">
+              <span class="text-black-50">Feb 17, 1983</span>
+              <h5 class="card-title">Card Title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem accusamus ad praesentium tenetur pariatur velit, dolorum
+                nisi, ipsa volup
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a class="big-btn mt-5 btn rounded-pill main-btn" href="#"
+            >More articles</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SUBSCRIBE  -->
+    <section class="subscribe text-center pt-5 pb-5 text-md-start">
+      <div class="container">
+        <form class="row align-self-center">
+          <div class="col-md-6 col-lg-3 fw-bold fs-5 mb-3">
+            Subscribe to our newsletter
+          </div>
+          <div class="col-md-6 col-lg-7 mb-3">
+            <input
+              class="e-mail w-100 bg-transparent text-light p-2"
+              type="text"
+              placeholder="Enter your e-mail address"
+            />
+          </div>
+          <div class="col-md-6 col-lg-2 mb-3">
+            <input
+              id="submit"
+              class="ptn rounded-pill"
+              type="submit"
+              value="Subscribe"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="pt-5 pb-5 text-center text-md-start text-white-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-5">
+            <img class="mb-4" src="./imgs/logo.png" alt="" />
+            <p class="mb-4 lh-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+              ratione provident molestias cum,
+            </p>
+            <div class="copyright">Created by: <em>Hisham Sakr</em></div>
+            <div>&copy;2023 - <em>Bondi inc.</em></div>
+          </div>
+          <div class="links col-md-6 col-lg-2 mb-5">
+            <h5 class="text-light mb-5">Links</h5>
+            <ul class="list-unstyled lh-lg">
+              <li>Home</li>
+              <li>Our Services</li>
+              <li>Portfolio</li>
+              <li>Support</li>
+              <li>Terms and Condidtions</li>
+            </ul>
+          </div>
+          <div class="links col-md-6 col-lg-2 mb-5">
+            <h5 class="text-light mb-5">About Us</h5>
+            <ul class="list-unstyled lh-lg">
+              <li>Sign in</li>
+              <li>Regester</li>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="contacts">
+              <h5 class="text-light">Contact Us</h5>
+              <p class="lh-lg mt-5 mb-3">
+                Get in touch with us via phone or e mail, We are wating your
+                call or messege
+              </p>
+              <a class="btn rounded-pill main-btn w-100" href="#"
+                >modernhisham@gmail.com</a
+              >
+              <ul
+                class="social list-unstyled d-flex justify-content-evenly gap-5 mt-5"
+              >
+                <li>
+                  <a class="text-light d-block" href="#">
+                    <i class="twitter fa-brands fa-twitter fa-lg p-2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="text-light d-block" href="#">
+                    <i class="instagram fa-brands fa-instagram fa-lg p-2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="text-light d-block" href="#">
+                    <i class="facebook fa-brands fa-facebook fa-lg p-2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="text-light d-block" href="#">
+                    <i class="youtube fa-brands fa-youtube fa-lg p-2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="text-light d-block" href="#">
+                    <i class="linkedin fa-brands fa-linkedin fa-lg p-2"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
